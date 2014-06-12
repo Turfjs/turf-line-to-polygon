@@ -19,7 +19,7 @@ module.exports = function lineToPolygon(f) {
     throw new Error('Only Linestring geometry type is supported.');
   }
 
-  if (geometry.coordinates.length <=0) {
+  if (geometry.coordinates.length === 0) {
     throw new Error('Empty geometry.');
   }
 
