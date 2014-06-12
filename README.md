@@ -6,7 +6,7 @@ Transforms a LineString geometry to a (closed) Polygon geometry.
 
 ## Usage
 
-    var lineToPolygon = require('turf-lineToPolygon');
+    var lineToPolygon = require('turf-linetopolygon');
 
     var lineFeature = {
       "type": "Feature",
