@@ -2,7 +2,7 @@ var test = require('tape');
 var lineToPolygon = require('./');
 
 test('lineToPolygon', function(t){
-  t.plan(6);
+  t.plan(7);
 
   var openFeature = {
     "type": "Feature",
@@ -29,6 +29,11 @@ test('lineToPolygon', function(t){
     "coordinates": [ [ 0,0 ], [ 0,1 ], [ 1,1 ], [ 1,0 ], [ 0,0 ] ]
   };
 
+  var shortLine = {
+    "type": "LineString",
+    "coordinates": [ [ 0,0 ], [ 0,1 ] ]
+  };
+
   var feature = lineToPolygon(openFeature);
   t.equal(feature.geometry.type, 'Polygon', 'Open Feature is polygon');
   t.equal(feature.geometry.coordinates[0].length, 5, 'Open Feature LineString was closed');
@@ -42,4 +47,8 @@ test('lineToPolygon', function(t){
 
   geometry = lineToPolygon(closedGeometry);
   t.equal(geometry.coordinates[0].length, 5, 'Closed Geometry LineString unmodified');
+
+  t.throws(function() {lineToPolygon(shortLine);}, '2 position LineString throws error.');
+
+
 });

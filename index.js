@@ -28,6 +28,10 @@ module.exports = function lineToPolygon(f) {
 
   if (!areIdentical(firstVertex, lastVertex)) geometry.coordinates.push(firstVertex);
 
+  if (geometry.coordinates.length < 4) {
+    throw new Error('A Polygon needs to have 4 or more positions.')
+  }
+
   geometry.type = 'Polygon';
   geometry.coordinates = [geometry.coordinates];
 
