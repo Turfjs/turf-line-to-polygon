@@ -1,5 +1,5 @@
 {
-  "name": "turf-linetopolygon",
+  "name": "turf-line-to-polygon",
   "version": "0.1.1",
   "description": "A turf module to transform a LineString geometry to a (closed) Polygon geometry.",
   "main": "index.js",
