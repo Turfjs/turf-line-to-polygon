@@ -1,4 +1,4 @@
-# turf-lineToPolygon
+# turf-line-to-polygon
 
 [![Build Status](https://travis-ci.org/Turfjs/turf-line-to-polygon.svg)](https://travis-ci.org/Turfjs/turf-line-to-polygon)
 
@@ -6,7 +6,7 @@ Transforms a LineString geometry to a (closed) Polygon geometry.
 
 ## Usage
 
-    var lineToPolygon = require('turf-linetopolygon');
+    var lineToPolygon = require('turf-line-to-polygon');
 
     var lineFeature = {
       "type": "Feature",
