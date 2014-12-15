@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cspanring/turf-lineToPolygon.git"
+    "url": "https://github.com/Turfjs/turf-line-to-polygon.git"
   },
   "keywords": [
     "geojson",
@@ -18,7 +18,7 @@
   ],
   "author": "Christian Spanring",
   "license": "ISC",
-  "homepage": "https://github.com/cspanring/turf-lineToPolygon",
+  "homepage": "https://github.com/Turfjs/turf-line-to-polygon.git",
   "devDependencies": {
     "tape": "^2.13.2"
   }
