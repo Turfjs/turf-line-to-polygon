@@ -1,6 +1,6 @@
 # turf-lineToPolygon
 
-[![Build Status](https://travis-ci.org/cspanring/turf-lineToPolygon.svg)](https://travis-ci.org/cspanring/turf-lineToPolygon)
+[![Build Status](https://travis-ci.org/Turfjs/turf-line-to-polygon.svg)](https://travis-ci.org/Turfjs/turf-line-to-polygon)
 
 Transforms a LineString geometry to a (closed) Polygon geometry.
 
